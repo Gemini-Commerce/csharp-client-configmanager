@@ -1,18 +1,20 @@
 # configmanager.Api.ConfigManagerApi
 
-All URIs are relative to *http://localhost*
+All URIs are relative to *https://config-manager.api.gogemini.io*
 
 | Method | HTTP request | Description |
 |--------|--------------|-------------|
-| [**ConfigManagerBulkSetConfigs**](ConfigManagerApi.md#configmanagerbulksetconfigs) | **POST** /configmanager.ConfigManager/BulkSetConfigs |  |
-| [**ConfigManagerGetConfig**](ConfigManagerApi.md#configmanagergetconfig) | **POST** /configmanager.ConfigManager/GetConfig |  |
+| [**ConfigManagerBulkSetConfigs**](ConfigManagerApi.md#configmanagerbulksetconfigs) | **POST** /configmanager.ConfigManager/BulkSetConfigs | BulkSetConfigs |
+| [**ConfigManagerGetConfig**](ConfigManagerApi.md#configmanagergetconfig) | **POST** /configmanager.ConfigManager/GetConfig | GetConfig |
 | [**ConfigManagerGetTenantIdByCode**](ConfigManagerApi.md#configmanagergettenantidbycode) | **POST** /configmanager.ConfigManager/GetTenantIdByCode |  |
 
 <a id="configmanagerbulksetconfigs"></a>
 # **ConfigManagerBulkSetConfigs**
 > Object ConfigManagerBulkSetConfigs (ConfigmanagerBulkSetConfigsRequest body)
 
+BulkSetConfigs
 
+Bulk set configs
 
 ### Example
 ```csharp
@@ -29,12 +31,16 @@ namespace Example
         public static void Main()
         {
             Configuration config = new Configuration();
-            config.BasePath = "http://localhost";
+            config.BasePath = "https://config-manager.api.gogemini.io";
+            // Configure OAuth2 access token for authorization: standardAuthorization
+            config.AccessToken = "YOUR_ACCESS_TOKEN";
+
             var apiInstance = new ConfigManagerApi(config);
             var body = new ConfigmanagerBulkSetConfigsRequest(); // ConfigmanagerBulkSetConfigsRequest | 
 
             try
             {
+                // BulkSetConfigs
                 Object result = apiInstance.ConfigManagerBulkSetConfigs(body);
                 Debug.WriteLine(result);
             }
@@ -55,6 +61,7 @@ This returns an ApiResponse object which contains the response data, status code
 ```csharp
 try
 {
+    // BulkSetConfigs
     ApiResponse<Object> response = apiInstance.ConfigManagerBulkSetConfigsWithHttpInfo(body);
     Debug.Write("Status Code: " + response.StatusCode);
     Debug.Write("Response Headers: " + response.Headers);
@@ -80,7 +87,7 @@ catch (ApiException e)
 
 ### Authorization
 
-No authorization required
+[standardAuthorization](../README.md#standardAuthorization)
 
 ### HTTP request headers
 
@@ -100,7 +107,9 @@ No authorization required
 # **ConfigManagerGetConfig**
 > ConfigmanagerConfigResponse ConfigManagerGetConfig (ConfigmanagerGetConfigRequest body)
 
+GetConfig
 
+Get a config
 
 ### Example
 ```csharp
@@ -117,12 +126,16 @@ namespace Example
         public static void Main()
         {
             Configuration config = new Configuration();
-            config.BasePath = "http://localhost";
+            config.BasePath = "https://config-manager.api.gogemini.io";
+            // Configure OAuth2 access token for authorization: standardAuthorization
+            config.AccessToken = "YOUR_ACCESS_TOKEN";
+
             var apiInstance = new ConfigManagerApi(config);
             var body = new ConfigmanagerGetConfigRequest(); // ConfigmanagerGetConfigRequest | 
 
             try
             {
+                // GetConfig
                 ConfigmanagerConfigResponse result = apiInstance.ConfigManagerGetConfig(body);
                 Debug.WriteLine(result);
             }
@@ -143,6 +156,7 @@ This returns an ApiResponse object which contains the response data, status code
 ```csharp
 try
 {
+    // GetConfig
     ApiResponse<ConfigmanagerConfigResponse> response = apiInstance.ConfigManagerGetConfigWithHttpInfo(body);
     Debug.Write("Status Code: " + response.StatusCode);
     Debug.Write("Response Headers: " + response.Headers);
@@ -168,7 +182,7 @@ catch (ApiException e)
 
 ### Authorization
 
-No authorization required
+[standardAuthorization](../README.md#standardAuthorization)
 
 ### HTTP request headers
 
@@ -205,7 +219,12 @@ namespace Example
         public static void Main()
         {
             Configuration config = new Configuration();
-            config.BasePath = "http://localhost";
+            config.BasePath = "https://config-manager.api.gogemini.io";
+            // Configure API key authorization: Authorization
+            config.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // config.AddApiKeyPrefix("Authorization", "Bearer");
+
             var apiInstance = new ConfigManagerApi(config);
             var body = new ConfigmanagerGetTenantIdByCodeRequest(); // ConfigmanagerGetTenantIdByCodeRequest | 
 
@@ -256,7 +275,7 @@ catch (ApiException e)
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 

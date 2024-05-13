@@ -1,5 +1,4 @@
 .gitignore
-.openapi-generator-ignore
 README.md
 api/openapi.yaml
 appveyor.yml
@@ -28,6 +27,9 @@ src/configmanager/Api/ConfigManagerApi.cs
 src/configmanager/Client/ApiClient.cs
 src/configmanager/Client/ApiException.cs
 src/configmanager/Client/ApiResponse.cs
+src/configmanager/Client/Auth/OAuthAuthenticator.cs
+src/configmanager/Client/Auth/OAuthFlow.cs
+src/configmanager/Client/Auth/TokenResponse.cs
 src/configmanager/Client/ClientUtils.cs
 src/configmanager/Client/Configuration.cs
 src/configmanager/Client/ExceptionFactory.cs
