@@ -36,7 +36,10 @@ namespace configmanager.Model
         /// Initializes a new instance of the <see cref="ConfigmanagerGetTenantIdByCodeResponse" /> class.
         /// </summary>
         [JsonConstructorAttribute]
-        protected ConfigmanagerGetTenantIdByCodeResponse() { }
+        protected ConfigmanagerGetTenantIdByCodeResponse()
+        {
+            this.AdditionalProperties = new Dictionary<string, object>();
+        }
         /// <summary>
         /// Initializes a new instance of the <see cref="ConfigmanagerGetTenantIdByCodeResponse" /> class.
         /// </summary>
@@ -49,6 +52,7 @@ namespace configmanager.Model
                 throw new ArgumentNullException("tenantId is a required property for ConfigmanagerGetTenantIdByCodeResponse and cannot be null");
             }
             this.TenantId = tenantId;
+            this.AdditionalProperties = new Dictionary<string, object>();
         }
 
         /// <summary>
@@ -56,6 +60,12 @@ namespace configmanager.Model
         /// </summary>
         [DataMember(Name = "tenantId", IsRequired = true, EmitDefaultValue = true)]
         public string TenantId { get; set; }
+
+        /// <summary>
+        /// Gets or Sets additional properties
+        /// </summary>
+        [JsonExtensionData]
+        public IDictionary<string, object> AdditionalProperties { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object
@@ -66,6 +76,7 @@ namespace configmanager.Model
             StringBuilder sb = new StringBuilder();
             sb.Append("class ConfigmanagerGetTenantIdByCodeResponse {\n");
             sb.Append("  TenantId: ").Append(TenantId).Append("\n");
+            sb.Append("  AdditionalProperties: ").Append(AdditionalProperties).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -84,7 +95,7 @@ namespace configmanager.Model
         /// </summary>
         /// <param name="validationContext">Validation context</param>
         /// <returns>Validation Result</returns>
-        IEnumerable<System.ComponentModel.DataAnnotations.ValidationResult> IValidatableObject.Validate(ValidationContext validationContext)
+        IEnumerable<ValidationResult> IValidatableObject.Validate(ValidationContext validationContext)
         {
             yield break;
         }

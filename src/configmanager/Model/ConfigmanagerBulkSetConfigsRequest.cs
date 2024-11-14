@@ -36,7 +36,10 @@ namespace configmanager.Model
         /// Initializes a new instance of the <see cref="ConfigmanagerBulkSetConfigsRequest" /> class.
         /// </summary>
         [JsonConstructorAttribute]
-        protected ConfigmanagerBulkSetConfigsRequest() { }
+        protected ConfigmanagerBulkSetConfigsRequest()
+        {
+            this.AdditionalProperties = new Dictionary<string, object>();
+        }
         /// <summary>
         /// Initializes a new instance of the <see cref="ConfigmanagerBulkSetConfigsRequest" /> class.
         /// </summary>
@@ -56,6 +59,7 @@ namespace configmanager.Model
                 throw new ArgumentNullException("configs is a required property for ConfigmanagerBulkSetConfigsRequest and cannot be null");
             }
             this.Configs = configs;
+            this.AdditionalProperties = new Dictionary<string, object>();
         }
 
         /// <summary>
@@ -71,6 +75,12 @@ namespace configmanager.Model
         public List<BulkSetConfigsRequestConfig> Configs { get; set; }
 
         /// <summary>
+        /// Gets or Sets additional properties
+        /// </summary>
+        [JsonExtensionData]
+        public IDictionary<string, object> AdditionalProperties { get; set; }
+
+        /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -80,6 +90,7 @@ namespace configmanager.Model
             sb.Append("class ConfigmanagerBulkSetConfigsRequest {\n");
             sb.Append("  TenantId: ").Append(TenantId).Append("\n");
             sb.Append("  Configs: ").Append(Configs).Append("\n");
+            sb.Append("  AdditionalProperties: ").Append(AdditionalProperties).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -98,7 +109,7 @@ namespace configmanager.Model
         /// </summary>
         /// <param name="validationContext">Validation context</param>
         /// <returns>Validation Result</returns>
-        IEnumerable<System.ComponentModel.DataAnnotations.ValidationResult> IValidatableObject.Validate(ValidationContext validationContext)
+        IEnumerable<ValidationResult> IValidatableObject.Validate(ValidationContext validationContext)
         {
             yield break;
         }

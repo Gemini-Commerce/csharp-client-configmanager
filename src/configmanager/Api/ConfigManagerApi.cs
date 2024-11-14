@@ -114,7 +114,7 @@ namespace configmanager.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of Object</returns>
-        System.Threading.Tasks.Task<Object> ConfigManagerBulkSetConfigsAsync(ConfigmanagerBulkSetConfigsRequest body, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<Object> ConfigManagerBulkSetConfigsAsync(ConfigmanagerBulkSetConfigsRequest body, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken));
 
         /// <summary>
         /// BulkSetConfigs
@@ -127,7 +127,7 @@ namespace configmanager.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (Object)</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> ConfigManagerBulkSetConfigsWithHttpInfoAsync(ConfigmanagerBulkSetConfigsRequest body, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<Object>> ConfigManagerBulkSetConfigsWithHttpInfoAsync(ConfigmanagerBulkSetConfigsRequest body, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken));
         /// <summary>
         /// GetConfig
         /// </summary>
@@ -139,7 +139,7 @@ namespace configmanager.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ConfigmanagerConfigResponse</returns>
-        System.Threading.Tasks.Task<ConfigmanagerConfigResponse> ConfigManagerGetConfigAsync(ConfigmanagerGetConfigRequest body, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ConfigmanagerConfigResponse> ConfigManagerGetConfigAsync(ConfigmanagerGetConfigRequest body, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken));
 
         /// <summary>
         /// GetConfig
@@ -152,7 +152,7 @@ namespace configmanager.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (ConfigmanagerConfigResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<ConfigmanagerConfigResponse>> ConfigManagerGetConfigWithHttpInfoAsync(ConfigmanagerGetConfigRequest body, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<ConfigmanagerConfigResponse>> ConfigManagerGetConfigWithHttpInfoAsync(ConfigmanagerGetConfigRequest body, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
@@ -164,7 +164,7 @@ namespace configmanager.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ConfigmanagerGetTenantIdByCodeResponse</returns>
-        System.Threading.Tasks.Task<ConfigmanagerGetTenantIdByCodeResponse> ConfigManagerGetTenantIdByCodeAsync(ConfigmanagerGetTenantIdByCodeRequest body, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ConfigmanagerGetTenantIdByCodeResponse> ConfigManagerGetTenantIdByCodeAsync(ConfigmanagerGetTenantIdByCodeRequest body, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -177,7 +177,7 @@ namespace configmanager.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (ConfigmanagerGetTenantIdByCodeResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<ConfigmanagerGetTenantIdByCodeResponse>> ConfigManagerGetTenantIdByCodeWithHttpInfoAsync(ConfigmanagerGetTenantIdByCodeRequest body, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<ConfigmanagerGetTenantIdByCodeResponse>> ConfigManagerGetTenantIdByCodeWithHttpInfoAsync(ConfigmanagerGetTenantIdByCodeRequest body, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken));
         #endregion Asynchronous Operations
     }
 
@@ -393,7 +393,7 @@ namespace configmanager.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of Object</returns>
-        public async System.Threading.Tasks.Task<Object> ConfigManagerBulkSetConfigsAsync(ConfigmanagerBulkSetConfigsRequest body, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Object> ConfigManagerBulkSetConfigsAsync(ConfigmanagerBulkSetConfigsRequest body, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
         {
             configmanager.Client.ApiResponse<Object> localVarResponse = await ConfigManagerBulkSetConfigsWithHttpInfoAsync(body, operationIndex, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
@@ -407,7 +407,7 @@ namespace configmanager.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (Object)</returns>
-        public async System.Threading.Tasks.Task<configmanager.Client.ApiResponse<Object>> ConfigManagerBulkSetConfigsWithHttpInfoAsync(ConfigmanagerBulkSetConfigsRequest body, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<configmanager.Client.ApiResponse<Object>> ConfigManagerBulkSetConfigsWithHttpInfoAsync(ConfigmanagerBulkSetConfigsRequest body, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
         {
             // verify the required parameter 'body' is set
             if (body == null)
@@ -571,7 +571,7 @@ namespace configmanager.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ConfigmanagerConfigResponse</returns>
-        public async System.Threading.Tasks.Task<ConfigmanagerConfigResponse> ConfigManagerGetConfigAsync(ConfigmanagerGetConfigRequest body, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<ConfigmanagerConfigResponse> ConfigManagerGetConfigAsync(ConfigmanagerGetConfigRequest body, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
         {
             configmanager.Client.ApiResponse<ConfigmanagerConfigResponse> localVarResponse = await ConfigManagerGetConfigWithHttpInfoAsync(body, operationIndex, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
@@ -585,7 +585,7 @@ namespace configmanager.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (ConfigmanagerConfigResponse)</returns>
-        public async System.Threading.Tasks.Task<configmanager.Client.ApiResponse<ConfigmanagerConfigResponse>> ConfigManagerGetConfigWithHttpInfoAsync(ConfigmanagerGetConfigRequest body, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<configmanager.Client.ApiResponse<ConfigmanagerConfigResponse>> ConfigManagerGetConfigWithHttpInfoAsync(ConfigmanagerGetConfigRequest body, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
         {
             // verify the required parameter 'body' is set
             if (body == null)
@@ -738,7 +738,7 @@ namespace configmanager.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ConfigmanagerGetTenantIdByCodeResponse</returns>
-        public async System.Threading.Tasks.Task<ConfigmanagerGetTenantIdByCodeResponse> ConfigManagerGetTenantIdByCodeAsync(ConfigmanagerGetTenantIdByCodeRequest body, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<ConfigmanagerGetTenantIdByCodeResponse> ConfigManagerGetTenantIdByCodeAsync(ConfigmanagerGetTenantIdByCodeRequest body, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
         {
             configmanager.Client.ApiResponse<ConfigmanagerGetTenantIdByCodeResponse> localVarResponse = await ConfigManagerGetTenantIdByCodeWithHttpInfoAsync(body, operationIndex, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
@@ -752,7 +752,7 @@ namespace configmanager.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (ConfigmanagerGetTenantIdByCodeResponse)</returns>
-        public async System.Threading.Tasks.Task<configmanager.Client.ApiResponse<ConfigmanagerGetTenantIdByCodeResponse>> ConfigManagerGetTenantIdByCodeWithHttpInfoAsync(ConfigmanagerGetTenantIdByCodeRequest body, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<configmanager.Client.ApiResponse<ConfigmanagerGetTenantIdByCodeResponse>> ConfigManagerGetTenantIdByCodeWithHttpInfoAsync(ConfigmanagerGetTenantIdByCodeRequest body, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
         {
             // verify the required parameter 'body' is set
             if (body == null)
