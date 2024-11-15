@@ -2,7 +2,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 VisualStudioVersion = 12.0.0.0
 MinimumVisualStudioVersion = 10.0.0.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "configmanager", "src\configmanager\configmanager.csproj", "{DF79198D-2194-4B25-A9C9-82E968F1279E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "configmanager", "src\configmanager\configmanager.csproj", "{3F8BAEB8-4139-447A-93F4-460633152162}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "configmanager.Test", "src\configmanager.Test\configmanager.Test.csproj", "{19F1DEBC-DE5E-4517-8062-F000CD499087}"
 EndProject
@@ -12,10 +12,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{DF79198D-2194-4B25-A9C9-82E968F1279E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DF79198D-2194-4B25-A9C9-82E968F1279E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DF79198D-2194-4B25-A9C9-82E968F1279E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DF79198D-2194-4B25-A9C9-82E968F1279E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F8BAEB8-4139-447A-93F4-460633152162}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F8BAEB8-4139-447A-93F4-460633152162}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F8BAEB8-4139-447A-93F4-460633152162}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F8BAEB8-4139-447A-93F4-460633152162}.Release|Any CPU.Build.0 = Release|Any CPU
 		{19F1DEBC-DE5E-4517-8062-F000CD499087}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{19F1DEBC-DE5E-4517-8062-F000CD499087}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{19F1DEBC-DE5E-4517-8062-F000CD499087}.Release|Any CPU.ActiveCfg = Release|Any CPU
